@@ -1,9 +1,137 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Assignment Module2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 
+  padding:25px;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* The browser window */
+.container {
+  border: 3px solid #f1f1f1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+/* Container for columns and the top "toolbar" */
+.row {
+  padding: 10px;
+  background: #f1f1f1;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+}
+
+.left {
+  width: 15%;
+}
+
+.right {
+  width: 10%;
+}
+
+.middle {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Three dots */
+.dot {
+  margin-top: 4px;
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Style the input field */
+input[type=text] {
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+  background-color: white;
+  margin-top: -8px;
+  height: 25px;
+  color: #666;
+  padding: 5px;
+}
+
+/* Three bars (hamburger menu) */
+.bar {
+  width: 17px;
+  height: 3px;
+  background-color: #aaa;
+  margin: 3px 0;
+  display: block;
+}
+
+/* Page content */
+.content {
+  /*background-color: lightblue;*/
+  width: 200px;
+  
+  padding: 10px;
+  background-position: center;
+}
+
+p{
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 10px;
+}
+#p1 {
+  
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  background-position: center;
+  
+padding: 10px;
+margin-left: 10px;
+}
+#p2{
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  background-position: center;
+  margin-left: 25px;
+  float: left;
+
+}
+section{
+  clear: both;
+}
+div.sticky {
+  position: sticky;
+  width: 100%;
+  bottom: 10px;
+  border: 1px solid gray;
+  background-color: gray;
+} 
+
+</style>
 </head>
 <body>
+
 <div class="container">
   <div class="row">
     <div class="column left">
@@ -15,16 +143,21 @@
       <input type="text" value="http://www.w3schools.com">
     </div>
     <div class="column right">
-      <div style="float:right">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
+      <span class="Search"></span>
+    <input type="text" placeholder="Search..">
+  </div>
     </div>
   </div>
+<h3>Our Menu</h3>
+  <div class="content">
+    
+    <p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+    <p id="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+  
+  </div>
+<section></section>
+<div class="sticky"><strong></strong><br></div>
 
-  <div id="box">
-    <div id="content">tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt </div>
 </div>
 </body>
-</html>
+</html> 
