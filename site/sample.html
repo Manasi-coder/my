@@ -2,35 +2,51 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
+<link rel="stylesheet" type="text/css" href="html/style.css">
+
+</head>
+<style type="text/css">
+  body {
   font-family: 
   padding:25px;
+font-family: sans-serif;
+
 
 }
 
 * {
   box-sizing: border-box;
+
+
 }
 
-/* The browser window */
 .container {
-  border: 3px solid #f1f1f1;
+  border: 3px solid black;
   border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  border-top-right-radius: 4
+  background-color:gray;
+
 }
 
-/* Container for columns and the top "toolbar" */
+
+h6{
+  text-align: center;
+  background-color: gray;
+}
+
+
 .row {
   padding: 10px;
-  background: #f1f1f1;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
+  background: gray;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  border: 3px solid black:;
 }
 
-/* Create three unequal columns that floats next to each other */
+
 .column {
   float: left;
+  background-color: gray;
 }
 
 .left {
@@ -38,43 +54,50 @@ body {
 }
 
 .right {
-  width: 10%;
+  width: 5%;
 }
 
 .middle {
-  width: 75%;
+  width: 70%;
+  border: 1px solid black;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Three dots */
-.dot {
+
+.home {
   margin-top: 4px;
   height: 12px;
   width: 12px;
-  background-color: #bbb;
+  /*background-color: white;*/
   border-radius: 50%;
-  display: inline-block;
+  /*display: inline-block;*/
 }
 
-/* Style the input field */
+
 input[type=text] {
   width: 100%;
   border-radius: 3px;
-  border: none;
+  border: 1px solid black;
   background-color: white;
   margin-top: -8px;
   height: 25px;
   color: #666;
   padding: 5px;
 }
+.img{
 
-/* Three bars (hamburger menu) */
+  width: 1%;
+  height: 1%;
+  position:relative;
+  middle:;
+  right: 0;
+}
+
 .bar {
   width: 17px;
   height: 3px;
@@ -82,82 +105,136 @@ input[type=text] {
   margin: 3px 0;
   display: block;
 }
+h3{
+  text-align: center;
+}
 
-/* Page content */
 .content {
   /*background-color: lightblue;*/
-  width: 200px;
-  
-  padding: 10px;
+  width: 250px;
+  height: 250px;
+  padding: 30px;
   background-position: center;
+  float: left;
+  margin-right: 30px auto;
+  
+  
+}
+.text{
+  position: absolute;
+
 }
 
 p{
-  width: 50px;
-  height: 50px;
-  float: left;
-  margin-right: 10px;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  border: 2px solid black;
+  vertical-align: middle;
+
 }
 #p1 {
   
-  height: 200px;
-  width: 200px;
-  background-color: blue;
+  height: 100px;
+width: 300px;
+  background-color: gray;
   background-position: center;
-  
-padding: 10px;
-margin-left: 10px;
+  float: right;
+position: relative;
+padding: 25px;
+margin: 20px;
+text-align: justify;
+box-sizing: border-box;
+border-radius: 10px;
+align-self:  center;
+border: 2px solid black;
+
 }
 #p2{
-  height: 200px;
-  width: 200px;
-  background-color: red;
+height: 100px;
+  width: 300px;
+  background-color: gray;
+  background-position: center;
+  margin-left:   20px;
+  padding: 20px;
+  float: right;
+  box-sizing: border-box;
+border-radius: 10px;
+text-align: justify;
+position: relative;
+margin: 20px;
+align-self: center;
+float: left;
+border: 2px solid black;
+}
+#p3{
+  height: 100px;
+  width: 300px;
+  background-color: gray;
   background-position: center;
   margin-left: 25px;
-  float: left;
-
+  padding: 20px;
+  float: right;
+  box-sizing: border-box;
+border-radius: 10px;
+text-align: justify;
+position: relative;
+margin: 20px;
+align-self: center;
+border: 2px solid black;
 }
 section{
   clear: both;
+  padding-bottom: 10%;
 }
 div.sticky {
   position: sticky;
   width: 100%;
-  bottom: 10px;
-  border: 1px solid gray;
+  bottom: 5px;
+  border: 1px solid black;
   background-color: gray;
+  padding-bottom: 10px
 } 
 
 </style>
-</head>
 <body>
 
+
 <div class="container">
+  
+  
   <div class="row">
+    <h6>Assignment Solution for Module 2</h6>
     <div class="column left">
-      <span class="dot" style="background:#ED594A;"></span>
-      <span class="dot" style="background:#FDD800;"></span>
-      <span class="dot" style="background:#5AC05A;"></span>
+      <span class="home"><img src="https://img.icons8.com/windows/32/000000/arrow-pointing-left.png"/></span>
+      <span class="home"><img src="https://img.icons8.com/windows/32/000000/arrow.png"/></span>
+      <span class="home"><img src="https://img.icons8.com/metro/26/000000/multiply.png"/></span>
+      <span class="home"><img src="https://img.icons8.com/small/32/000000/home.png"/></span>
+      
     </div>
     <div class="column middle">
-      <input type="text" value="http://www.w3schools.com">
+      <input type="text" value="https://manasi-coder.github.io/my/site/sample.html">
     </div>
     <div class="column right">
-      <span class="Search"></span>
-    <input type="text" placeholder="Search..">
+  
+      <span class="img"><img src="https://img.icons8.com/small/32/000000/search.png"/></span>
+    
+
   </div>
     </div>
-  </div>
+  
 <h3>Our Menu</h3>
   <div class="content">
-    
+    <div class="text">
     <p id="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
     <p id="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-  
+    <p id="p3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+  </div>
   </div>
 <section></section>
 <div class="sticky"><strong></strong><br></div>
 
 </div>
+
 </body>
 </html> 
